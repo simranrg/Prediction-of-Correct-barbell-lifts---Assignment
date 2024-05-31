@@ -1,4 +1,5 @@
 # Prediction-of-Correct-barbell-lifts---Assignment
+```{r configuration, echo=TRUE, results='hide'}
 
 ## Install and attach libraries
 install.packages("caret")
@@ -18,6 +19,7 @@ View(testing)
 ### to understand the data we check no and types of variables
 names(testing)
 str(testing)
+```
 ### Clean data - to remove any column containing NA values
 training = training[,colSums(is.na(training)) == 0]
 testing = testing[,colSums(is.na(testing)) == 0]

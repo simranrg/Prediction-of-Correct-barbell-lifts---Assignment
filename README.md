@@ -1,7 +1,8 @@
 # Prediction-of-Correct-barbell-lifts---Assignment
-```{r configuration, echo=TRUE, results='hide'}
 
 ## Install and attach libraries
+```{r configuration, echo=TRUE, results='hide'}
+
 install.packages("caret")
 install.packages("rpart")
 install.packages("rpart.plot")
@@ -11,6 +12,7 @@ library(caret)
 library(rpart)
 library(rpart.plot)
 library(randomForest)
+```
 ### Read and explore data 
 training = read.csv("C:/Users/ALL/Downloads/pml-training.csv", na.strings=c("NA","#DIV/0!", ""))
 View(training)
@@ -19,7 +21,7 @@ View(testing)
 ### to understand the data we check no and types of variables
 names(testing)
 str(testing)
-```
+
 ### Clean data - to remove any column containing NA values
 training = training[,colSums(is.na(training)) == 0]
 testing = testing[,colSums(is.na(testing)) == 0]

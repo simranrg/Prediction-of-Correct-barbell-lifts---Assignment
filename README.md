@@ -13,20 +13,29 @@ library(rpart)
 library(rpart.plot)
 library(randomForest)
 ```
+
 ### Read and explore data 
+```{r configuration, echo=TRUE, results='hide'}
 training = read.csv("C:/Users/ALL/Downloads/pml-training.csv", na.strings=c("NA","#DIV/0!", ""))
 View(training)
 testing = read.csv("C:/Users/ALL/Downloads/pml-testing.csv", na.strings=c("NA","#DIV/0!", ""))
 View(testing)
+```
+
 ### to understand the data we check no and types of variables
+```{r configuration, echo=TRUE, results='hide'}
 names(testing)
 str(testing)
+```
 
 ### Clean data - to remove any column containing NA values
+```{r configuration, echo=TRUE, results='hide'}
 training = training[,colSums(is.na(training)) == 0]
 testing = testing[,colSums(is.na(testing)) == 0]
+```
 
 ### Subset data
+
 training = training[,-c(1:7)]
 testing = testing[,-c(1:7)]
 

@@ -75,9 +75,9 @@ fit_RF = randomForest(classe ~ ., data=train, method="class")
 
 ### Predict for validation set
 prediction_RF = predict(fit_RF, validation, type = "class")
-
+```{r decisiontreecm, echo=TRUE}
 confusionMatrix(prediction_RF, validation$classe)
-
+```
 ## Prediction for Test dataset
 predict_test_RF = predict(fit_RF, testing, type = "class")
 predict_test_RF

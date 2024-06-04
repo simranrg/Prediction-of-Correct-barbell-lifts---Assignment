@@ -54,6 +54,7 @@ ggplot(train, aes(x = classe)) +
   labs(title = "Levels of the variable classe", x = "classe levels", y = "Frequency")
 plot(table(train$classe))
 ```
+![Rplot](https://github.com/simranrg/Prediction-of-Correct-barbell-lifts---Assignment/assets/171349867/b20209b9-6e5a-4858-89c3-ec07aaccf438)
 
 ###____________DecisionTree____________###
 

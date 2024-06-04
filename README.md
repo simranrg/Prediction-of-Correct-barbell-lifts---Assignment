@@ -56,7 +56,7 @@ plot(table(train$classe))
 ```
 ![Rplot](https://github.com/simranrg/Prediction-of-Correct-barbell-lifts---Assignment/assets/171349867/b20209b9-6e5a-4858-89c3-ec07aaccf438)
 
-###____________DecisionTree____________###
+## DecisionTree
 
 ### Fit model,  The type = "class" parameter specifies that class labels should be returned (as opposed to probabilities).
 ```
@@ -116,7 +116,7 @@ Balanced Accuracy      0.8847   0.7652   0.7892   0.7934   0.8453
 #### KAPPA VALUE: used to assess the performance of a classification model by comparing the predicted classifications to the true classifications.The strength of agreement increases as the kappa value approaches 1. 
 #### so the kappa value and accuracy for decision tree is not very significant so we try to fit Random Forest model
 
-###___________RandomForest____________###
+## RandomForest
 
 ### Fit model
 ```

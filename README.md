@@ -67,7 +67,7 @@ fit = rpart(classe ~ ., data=train, method="class")
 prediction = predict(fit, validation, type = "class")
 ```
 
-### Plot resultS
+### Plot results
 ```
 rpart.plot(fit, main="Classification Tree", extra=102, under=TRUE, faclen=0)
 
@@ -92,7 +92,7 @@ prediction_RF = predict(fit_RF, validation, type = "class")
 confusionMatrix(prediction_RF, validation$classe)
 ```
 
-## Prediction for Test dataset
+### Prediction for Test dataset
 ```
 predict_test_RF = predict(fit_RF, testing, type = "class")
 predict_test_RF

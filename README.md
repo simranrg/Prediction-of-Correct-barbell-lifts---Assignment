@@ -76,6 +76,41 @@ print(is.factor(validation$classe))
 validation$classe=factor(validation$classe)      
 confusionMatrix(prediction, validation$classe)
 ```
+![DecTree](https://github.com/simranrg/Prediction-of-Correct-barbell-lifts---Assignment/assets/171349867/e7ca3a01-4e93-4f47-97c4-3c79a8864043)
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction    A    B    C    D    E
+         A 1169  150   33   35   23
+         B   30  543   47   41   47
+         C   22   77  531   36   38
+         D  147  102  212  585  116
+         E   27   77   32  107  677
+
+Overall Statistics
+                                          
+               Accuracy : 0.7147          
+                 95% CI : (0.7019, 0.7273)
+    No Information Rate : 0.2845          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.6398          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+
+Statistics by Class:
+
+                     Class: A Class: B Class: C Class: D Class: E
+Sensitivity            0.8380   0.5722   0.6211   0.7276   0.7514
+Specificity            0.9313   0.9583   0.9573   0.8593   0.9393
+Pos Pred Value         0.8291   0.7669   0.7543   0.5034   0.7359
+Neg Pred Value         0.9353   0.9032   0.9229   0.9415   0.9438
+Prevalence             0.2845   0.1935   0.1743   0.1639   0.1837
+Detection Rate         0.2384   0.1107   0.1083   0.1193   0.1381
+Detection Prevalence   0.2875   0.1444   0.1436   0.2369   0.1876
+Balanced Accuracy      0.8847   0.7652   0.7892   0.7934   0.8453
+
 #### KAPPA VALUE: used to assess the performance of a classification model by comparing the predicted classifications to the true classifications.The strength of agreement increases as the kappa value approaches 1. 
 #### so the kappa value and accuracy for decision tree is not very significant so we try to fit Random Forest model
 

@@ -1,6 +1,6 @@
 # Prediction-of-Correct-barbell-lifts---Assignment
 
-## Install and attach libraries
+### Install and attach libraries
 ```{r configuration, echo=TRUE, results='hide'}
 
 install.packages("caret")

@@ -163,6 +163,9 @@ Detection Rate         0.2832   0.1931   0.1731   0.1617   0.1835
 Detection Prevalence   0.2834   0.1947   0.1752   0.1625   0.1841
 Balanced Accuracy      0.9977   0.9979   0.9953   0.9927   0.9991
 ```
+### Conclusion:
+The confusion matrices show, that the Random Forest algorithm performens better than decision trees. The accuracy for the Random Forest model was 0.9947 compared to 0.7147 for Decision Tree model. Hence the random Forest model is choosen.
+
 ### Expected out-of-sample error
 The expected out-of-sample error is estimated at 0.0053, or 0.53%. The expected out-of-sample error is calculated as 1 - accuracy for predictions made against the cross-validation set. Our Test data set comprises 20 cases. With an accuracy above 99% on our cross-validation data, we can expect that very few, or none, of the test samples will be missclassified.
 

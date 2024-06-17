@@ -113,8 +113,9 @@ Detection Prevalence   0.2875   0.1444   0.1436   0.2369   0.1876
 Balanced Accuracy      0.8847   0.7652   0.7892   0.7934   0.8453
 ```
 
-#### KAPPA VALUE: used to assess the performance of a classification model by comparing the predicted classifications to the true classifications.The strength of agreement increases as the kappa value approaches 1. 
-#### so the kappa value and accuracy for decision tree is not very significant so we try to fit Random Forest model
+### Interpretation of KAPPA Value
+KAPPA VALUE is used to assess the performance of a classification model by comparing the predicted classifications to the true classifications.The strength of agreement increases as the kappa value approaches 1. 
+So the kappa value and accuracy for decision tree is not very significant so we try to fit Random Forest model
 
 ## RandomForest
 
